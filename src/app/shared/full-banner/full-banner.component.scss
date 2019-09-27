@@ -1,0 +1,35 @@
+.full-banner {
+    background-image: url('/assets/images/full-banner.jpg');
+    min-height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.full-banner small {
+    color: #999898;
+}
+.full-banner .btn-primary {
+    background-color: #E30F19;
+    border-radius: 0;
+    border: none;
+    min-width: 100px;
+}
+@media (min-width: 576px) {
+    .full-banner {
+        min-height: 256px;
+    }
+}
+@media (min-width: 768px) {
+    .full-banner .d-flex {
+        align-items: center;
+    }
+}
+@media (min-width: 992px) {
+    .full-banner {
+        min-height: 50vh;
+    }
+    .full-banner p {
+        color: #999898;
+        max-width: 50vw;
+    }
+}

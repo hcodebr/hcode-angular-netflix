@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #1B1B1B!important;
+    padding-top: 60px;
+}
+.backdrop {
+    background-color: rgba(0,0,0,.4);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+    }
+}

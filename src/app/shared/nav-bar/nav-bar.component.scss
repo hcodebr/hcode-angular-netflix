@@ -1,0 +1,87 @@
+.navbar {
+    z-index: 1000;
+}
+.navbar.bg-dark {
+    background-color: rgba(0,0,0,.6)!important;
+}
+.navbar .form-control {
+    background-color: #1B1B1B!important;
+    color: #FFF;
+    border-color: #FFF;
+    border-radius: 0;
+    max-width: 115px;
+    line-height: 28px;
+    height: 28px;
+}
+.navbar img {
+    height: 24px;
+}
+.navbar ul.sidebar {
+    color: #999898;
+    max-width: 250px;
+    background-color: #1B1B1B!important;
+    position: absolute;
+    top: 60px;
+    left: -250px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    transition: all 0.1s ease-out;
+    opacity: .5;
+}
+.navbar.sidebar-open ul {
+    left: 0;
+    opacity: 1;
+}
+.navbar ul li {
+    padding: .3em 1em;
+}
+.navbar ul li.divider {
+    border-bottom: #999898 1px solid;
+    margin: .3em auto;
+}
+.navbar-dark .navbar-toggler {
+    color: #FFF;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+.media-avatar img {
+    height: 38px;
+}
+@media (min-width: 576px) {
+    .navbar .form-control {
+        max-width: 180px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar.bg-dark {
+        background-color: transparent!important;
+        background-image: url('/assets/images/header_gradient.png');
+        background-repeat: repeat-x;
+    }
+    .navbar-brand.flex-grow-1 {
+        flex-grow: initial!important;
+    }
+    .navbar ul.nav {
+        flex-grow: 1!important;
+    }
+    .navbar ul.nav .active {
+        color: #E30F19!important;
+        font-weight: bold;
+    }
+    .navbar img {
+        height: 34px;
+    }
+}
+@media (min-width: 1200px) {
+    .navbar ul.nav li {
+        padding: 0;
+    }
+    .navbar ul.nav {
+        color: rgba(255, 255, 255, .5)!important;
+    }
+    .navbar ul.nav .active {
+        color: rgba(255, 255, 255, 1)!important;
+        font-weight: bold;
+    }
+}  
